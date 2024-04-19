@@ -1,4 +1,5 @@
 from shapes.shape import Shape
+import math
 
 
 class Triangle(Shape):
@@ -6,9 +7,21 @@ class Triangle(Shape):
         self.sanitized_input = self.sanitize_input(input_coordinates)
 
     def check_if_valid(self) -> bool:
-        for _tuple in self.sanitized_input:
-            print(_tuple)
-        return True
+        """
+            Calculate the distances between the points, and then apply the Pythagorean theorem.
+
+            return True if Triangle is a "right" triangle, false otherwise.
+        """
+        point_one = self.sanitized_input[0]  # 0, 0
+        point_two = self.sanitized_input[1]  # 5, 0
+        point_three = self.sanitized_input[2]  # 2, 2
+
+        side1_sq = (point_two[0] - point_one[0]) ** 2 + (point_two[1] - point_one[1]) ** 2
+        side2_sq = (point_three[0] - point_two[0]) ** 2 + (point_three[1] - point_two[1]) ** 2
+        side3_sq = (point_one[0] - point_three[0]) ** 2 + (point_one[1] - point_three[1]) ** 2
+
+        sides_sq = sorted([side1_sq, side2_sq, side3_sq])
+        return math.isclose(sides_sq[0] + sides_sq[1], sides_sq[2])
 
     def check_if_contains_x(self) -> bool:
         pass
