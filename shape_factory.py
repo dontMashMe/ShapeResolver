@@ -13,10 +13,10 @@ class ShapeFactory:
         match coordinate_count:
             case 3:
                 print("Detektiran trokut!")
-                return Triangle()
+                return Triangle(self.input)
             case 4:
                 print("Detektiran kvadar!")
-                return Rectangle()
+                return Rectangle(self.input)
             case _:
                 print("Detektiran poligon!")
-                return Polygon()
+                return Polygon(self.input)

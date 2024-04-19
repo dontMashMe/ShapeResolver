@@ -21,4 +21,5 @@ class Driver:
         return shape_factory.create()
 
     def check_if_valid(self) -> bool:
-        pass
+        self.shape.check_if_valid()
+        return True

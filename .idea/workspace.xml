@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32050418-d323-4d24-8819-520b2f8e664f" name="Changes" comment="Added skeleton of the driver class and shape factory">
-      <change afterPath="$PROJECT_DIR$/shapes/polygon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shapes/rectangle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shapes/triangle.py" afterDir="false" />
+    <list default="true" id="32050418-d323-4d24-8819-520b2f8e664f" name="Changes" comment="Fix import issue!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shape.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/shape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shape_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/shape_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapes/polygon.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/polygon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapes/rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/rectangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapes/shape.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/shape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapes/triangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/triangle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +62,11 @@
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MarijanBebek\PycharmProjects\RedCatZad\shapes" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -93,12 +99,30 @@
       <option name="project" value="LOCAL" />
       <updated>1713539703034</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Code restructuring; Moved different Shape subclasses to their respective files">
+      <option name="closed" value="true" />
+      <created>1713541009536</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713541009536</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fix import issue!">
+      <option name="closed" value="true" />
+      <created>1713541064056</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713541064056</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
     <MESSAGE value="Added skeleton of the driver class and shape factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added skeleton of the driver class and shape factory" />
+    <MESSAGE value="Code restructuring; Moved different Shape subclasses to their respective files" />
+    <MESSAGE value="Fix import issue!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix import issue!" />
   </component>
 </project>
