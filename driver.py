@@ -1,5 +1,5 @@
 from input_reader import InputReader
-from shape import Shape
+from shapes.shape import Shape
 from shape_factory import ShapeFactory
 
 
@@ -19,3 +19,6 @@ class Driver:
     def get_shape_type(self) -> Shape:
         shape_factory = ShapeFactory(self.input_coordinates)
         return shape_factory.create()
+
+    def check_if_valid(self) -> bool:
+        pass

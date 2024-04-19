@@ -1,4 +1,7 @@
-from shape import *
+from shapes.shape import Shape
+from shapes.triangle import Triangle
+from shapes.rectangle import Rectangle
+from shapes.polygon import Polygon
 
 
 class ShapeFactory:
@@ -7,7 +10,6 @@ class ShapeFactory:
 
     def create(self) -> Shape:
         coordinate_count = self.input.count("\n")
-        print(coordinate_count)
         match coordinate_count:
             case 3:
                 print("Detektiran trokut!")
