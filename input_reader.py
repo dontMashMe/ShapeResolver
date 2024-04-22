@@ -1,6 +1,7 @@
 class InputReader:
     def __init__(self, file_name: str):
         self.file_name: str = file_name
+
     input_root = "input"
 
     def load_file(self) -> str:
@@ -10,4 +11,3 @@ class InputReader:
             for line in f_read:
                 out += line
         return out
-

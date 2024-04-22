@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32050418-d323-4d24-8819-520b2f8e664f" name="Changes" comment="Shapes now take input as class parameter. Added method for input sanitation; only for Triangle thus far.">
+    <list default="true" id="32050418-d323-4d24-8819-520b2f8e664f" name="Changes" comment="Implemented check_if_valid for Triangle class. The check is done by calculating the distances between the points, and then applying the Pythagorean theorem">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/input_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapes/polygon.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/polygon.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shapes/triangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/triangle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,21 +27,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "dontMashMe"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dontMashMe&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dontMashMe/ShapeResolver.git",
-    "accountId": "fe088c82-34d5-483a-8efe-6b9c786d28bd"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dontMashMe/ShapeResolver.git&quot;,
+    &quot;accountId&quot;: &quot;fe088c82-34d5-483a-8efe-6b9c786d28bd&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2fJyEYd9Qo2pQZGApfrN7n9bzii" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,16 +50,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.driver.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.shape_factory.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.driver.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.shape_factory.executor&quot;: &quot;Run&quot;,
+    &quot;Python.triangle.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\MarijanBebek\PycharmProjects\RedCatZad\shapes" />
@@ -116,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713546824649</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implemented check_if_valid for Triangle class. The check is done by calculating the distances between the points, and then applying the Pythagorean theorem">
+      <option name="closed" value="true" />
+      <created>1713547549029</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713547549029</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -125,6 +139,7 @@
     <MESSAGE value="Code restructuring; Moved different Shape subclasses to their respective files" />
     <MESSAGE value="Fix import issue!" />
     <MESSAGE value="Shapes now take input as class parameter. Added method for input sanitation; only for Triangle thus far." />
-    <option name="LAST_COMMIT_MESSAGE" value="Shapes now take input as class parameter. Added method for input sanitation; only for Triangle thus far." />
+    <MESSAGE value="Implemented check_if_valid for Triangle class. The check is done by calculating the distances between the points, and then applying the Pythagorean theorem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented check_if_valid for Triangle class. The check is done by calculating the distances between the points, and then applying the Pythagorean theorem" />
   </component>
 </project>
