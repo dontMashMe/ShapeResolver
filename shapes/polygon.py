@@ -1,4 +1,5 @@
 from shapes.shape import Shape
+from shapes.shape_type import ShapeType
 
 
 class Polygon(Shape):
@@ -13,3 +14,6 @@ class Polygon(Shape):
 
     def sanitize_input(self, input_coordinates: str) -> list[tuple]:
         pass
+
+    def get_type(self):
+        return ShapeType.POLYGON

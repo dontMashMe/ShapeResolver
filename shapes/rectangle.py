@@ -1,4 +1,5 @@
 from shapes.shape import Shape
+from shapes.shape_type import ShapeType
 
 
 class Rectangle(Shape):
@@ -13,3 +14,6 @@ class Rectangle(Shape):
 
     def check_if_contains_x(self) -> bool:
         pass
+
+    def get_type(self):
+        return ShapeType.RECTANGLE

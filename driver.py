@@ -1,6 +1,6 @@
 from input_reader import InputReader
 from shapes.shape import Shape
-from shape_factory import ShapeFactory
+from shapes.shape_factory import ShapeFactory
 
 
 class Driver:

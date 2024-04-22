@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from shapes.shape_type import ShapeType
 
 
 class Shape(ABC):
@@ -12,4 +13,12 @@ class Shape(ABC):
 
     @abstractmethod
     def sanitize_input(self, input_coordinates: str) -> list[tuple]:
+        pass
+
+    @abstractmethod
+    def get_type(self) -> ShapeType:
+        """
+        This method is only used for assertions in Unit testing.
+        :return: ShapeType
+        """
         pass

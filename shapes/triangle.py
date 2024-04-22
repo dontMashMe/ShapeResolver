@@ -1,4 +1,5 @@
 from shapes.shape import Shape
+from shapes.shape_type import ShapeType
 import math
 
 
@@ -78,3 +79,6 @@ class Triangle(Shape):
                 tuple_list.append((x, y))
 
         return tuple_list
+
+    def get_type(self):
+        return ShapeType.TRIANGLE
