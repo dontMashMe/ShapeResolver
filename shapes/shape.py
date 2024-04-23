@@ -26,6 +26,10 @@ class Shape(ABC):
         return tuple_list
 
     @abstractmethod
+    def get_diagonal(self) -> float:
+        pass
+
+    @abstractmethod
     def get_type(self) -> ShapeType:
         """
         This method is only used for assertions in Unit testing.

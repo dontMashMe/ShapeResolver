@@ -3,6 +3,7 @@ from shapes.shape_type import ShapeType
 
 
 class Polygon(Shape):
+
     def __init__(self, input_coordinates: str):
         self.sanitized_input = self.sanitize_input(input_coordinates)
 
@@ -17,3 +18,6 @@ class Polygon(Shape):
 
     def get_type(self):
         return ShapeType.POLYGON
+
+    def get_diagonal(self) -> float:
+        pass

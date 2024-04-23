@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32050418-d323-4d24-8819-520b2f8e664f" name="Changes" comment="Introduced unit tests. Added &quot;get_type&quot; method to Shape abstract, which is used in test assertations.">
+    <list default="true" id="32050418-d323-4d24-8819-520b2f8e664f" name="Changes" comment="Implement check if point x is inside rectangle. &#10;&#10;Added unit tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapes/polygon.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/polygon.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shapes/rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/rectangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapes/shape.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/shape.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_rectangle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -249,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713808212174</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implement check if point x is inside rectangle. &#10;&#10;Added unit tests">
+      <option name="closed" value="true" />
+      <created>1713906030369</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713906030369</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,6 +283,7 @@
     <MESSAGE value="Implemented check_if_valid for Triangle class. The check is done by calculating the distances between the points, and then applying the Pythagorean theorem" />
     <MESSAGE value="Implement check_if_contains_x for Triangle. Some changes to the Driver class; now calls rest of the methods in the &quot;run()&quot; method, which is the only method exposed to main.py" />
     <MESSAGE value="Introduced unit tests. Added &quot;get_type&quot; method to Shape abstract, which is used in test assertations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Introduced unit tests. Added &quot;get_type&quot; method to Shape abstract, which is used in test assertations." />
+    <MESSAGE value="Implement check if point x is inside rectangle. &#10;&#10;Added unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement check if point x is inside rectangle. &#10;&#10;Added unit tests" />
   </component>
 </project>

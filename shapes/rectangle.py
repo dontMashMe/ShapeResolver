@@ -1,5 +1,6 @@
 from shapes.shape import Shape
 from shapes.shape_type import ShapeType
+import math
 
 
 class Rectangle(Shape):
@@ -58,6 +59,12 @@ class Rectangle(Shape):
             return False
 
         return True
+
+    def get_diagonal(self) -> float:
+        # Calculate the length of the diagonal using the distance formula
+        (x1, y1), (_, _), (x3, y3), (_, _) = self.all_points
+        diagonal_length = math.sqrt((x3 - x1) ** 2 + (y3 - y1) ** 2)
+        return diagonal_length
 
     def get_type(self):
         return ShapeType.RECTANGLE

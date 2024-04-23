@@ -22,6 +22,7 @@ class Driver:
             print("Ulazne koordinate ne sačinjavaju pravilan lik!")
             exit(0)
         print(shape.check_if_contains_x())
+        print(shape.get_diagonal())
 
     def __get_input(self, input_file: str) -> str:
         temp_input_var = InputReader(input_file).load_file()
