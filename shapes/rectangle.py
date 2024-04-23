@@ -5,9 +5,10 @@ from shapes.shape_type import ShapeType
 class Rectangle(Shape):
     def __init__(self, input_coordinates: str):
         self.sanitized_input = self.sanitize_input(input_coordinates)
-        self.point_d = self.find_fourth_vertex(
+        self.all_points: list[tuple[int, int]] = self.sanitized_input[:3]  # take the first three points, ignoring the X
+        self.all_points.append(self.find_fourth_vertex(
             self.sanitized_input[0], self.sanitized_input[1], self.sanitized_input[2]
-        )
+        ))
 
     def find_fourth_vertex(self, point_a: tuple, point_b: tuple, point_c: tuple) -> tuple[int, int]:
         # Calculate the midpoint between point_b and point_c
@@ -21,10 +22,7 @@ class Rectangle(Shape):
         return point_d_x, point_d_y
 
     def check_if_valid(self) -> bool:
-        all_points: list[tuple[int, int]] = self.sanitized_input[:3]  # take the first three points, ignoring the X
-        all_points.append(self.point_d)
-
-        (x1, y1), (x2, y2), (x3, y3), (x4, y4) = all_points
+        (x1, y1), (x2, y2), (x3, y3), (x4, y4) = self.all_points
 
         cx = (x1 + x2 + x3 + x4) / 4
         cy = (y1 + y2 + y3 + y4) / 4
@@ -36,7 +34,30 @@ class Rectangle(Shape):
         return dd1 == dd2 == dd3 == dd4
 
     def check_if_contains_x(self) -> bool:
-        pass
+        """
+         "if we connect the point to three vertexes of the rectangle,
+          then the angles between those segments and sides should be acute"
+        :return: True if contains, else False
+        """
+        (x1, y1), (x2, y2), (_, _), (x4, y4) = self.all_points
+        # point to find
+        (x, y) = self.sanitized_input[len(self.sanitized_input) - 1]
+
+        bax = x2 - x1
+        bay = y2 - y1
+        dax = x4 - x1
+        day = y4 - y1
+
+        if (x - x1) * bax + (y - y1) * bay < 0.0:
+            return False
+        if (x - x2) * bax + (y - y2) * bay > 0.0:
+            return False
+        if (x - x1) * dax + (y - y1) * day < 0.0:
+            return False
+        if (x - x4) * dax + (y - y4) * day > 0.0:
+            return False
+
+        return True
 
     def get_type(self):
         return ShapeType.RECTANGLE
