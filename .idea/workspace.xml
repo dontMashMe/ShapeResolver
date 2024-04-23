@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32050418-d323-4d24-8819-520b2f8e664f" name="Changes" comment="Introduced unit tests. Added &quot;get_type&quot; method to Shape abstract, which is used in test assertations.">
+      <change afterPath="$PROJECT_DIR$/tests/test_abstract_shape.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/inpt1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/inpt1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapes/rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/rectangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapes/shape.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/shape.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shapes/shape_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/shape_factory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shapes/shape_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/shapes/shape_type.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shapes/triangle.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_shape_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_shape_factory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +58,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_abstract_shape.TestShape.test_sanitize_input_rectangle.executor": "Run",
     "Python tests.Python tests for test_input_reader.TestInputReader.executor": "Run",
     "Python tests.Python tests for test_shape_factory.TestShapeFactory.executor": "Run",
+    "Python tests.Python tests for test_shape_factory.TestShapeFactory.test_create_polygon_with_less_than_3_coordinates.executor": "Run",
     "Python tests.Python tests in tests.executor": "Run",
     "Python.driver.executor": "Run",
     "Python.main.executor": "Run",
@@ -75,7 +79,7 @@
       <recent name="C:\Users\MarijanBebek\PycharmProjects\RedCatZad\shapes" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="driver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RedCatZad" />
       <option name="ENV_FILES" value="" />
@@ -98,7 +102,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_input_reader.TestInputReader" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RedCatZad" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_abstract_shape.TestShape.test_sanitize_input_rectangle" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="RedCatZad" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,7 +135,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_input_reader.TestInputReader&quot;" />
+      <option name="_new_target" value="&quot;test_abstract_shape.TestShape.test_sanitize_input_rectangle&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -128,7 +154,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in tests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_shape_factory.TestShapeFactory.test_create_polygon_with_less_than_3_coordinates" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="RedCatZad" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,17 +165,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_shape_factory.TestShapeFactory.test_create_polygon_with_less_than_3_coordinates&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.driver" />
-        <item itemvalue="Python tests.Python tests in tests" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python tests.Python tests for test_shape_factory.TestShapeFactory" />
-        <item itemvalue="Python tests.Python tests for test_input_reader.TestInputReader" />
-        <item itemvalue="Python tests.Python tests in tests" />
+        <item itemvalue="Python tests.Python tests for test_abstract_shape.TestShape.test_sanitize_input_rectangle" />
+        <item itemvalue="Python tests.Python tests for test_shape_factory.TestShapeFactory.test_create_polygon_with_less_than_3_coordinates" />
+        <item itemvalue="Python.driver" />
       </list>
     </recent_temporary>
   </component>

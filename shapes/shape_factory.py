@@ -10,9 +10,11 @@ class ShapeFactory:
     def create(self) -> Shape:
         coordinate_count = self.input.count("\n")
         match coordinate_count:
+            case 0 | 1 | 2:
+                raise ValueError("Nedovoljan broj koordinata!")
             case 3:
-                print("Detektiran trokut!")
-                return Rectangle(self.input) # TODO: Remove me. This is a placeholder!
+                print("Detektiran pravokutnik!")
+                return Rectangle(self.input)
             case 4:
                 print("Detektiran kvadar!")
                 return Rectangle(self.input)

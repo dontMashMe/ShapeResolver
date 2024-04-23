@@ -23,3 +23,10 @@ class TestShapeFactory(TestCase):
         actual_shape = shape_factory.create()
         self.assertIsInstance(actual_shape, Polygon)
         self.assertEqual(actual_shape.get_type(), expected_shape.get_type())
+
+    def test_create_polygon_with_less_than_3_coordinates(self):
+        # Test creating a Polygon with less than 3 coordinates (invalid case)
+        input_data = "0,0\n3,0\n"
+        shape_factory = ShapeFactory(input_data)
+        with self.assertRaises(ValueError):
+            shape_factory.create()
