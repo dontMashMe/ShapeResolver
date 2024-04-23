@@ -1,5 +1,4 @@
 from shapes.shape import Shape
-from shapes.triangle import Triangle
 from shapes.rectangle import Rectangle
 from shapes.polygon import Polygon
 
@@ -13,7 +12,7 @@ class ShapeFactory:
         match coordinate_count:
             case 3:
                 print("Detektiran trokut!")
-                return Triangle(self.input)
+                return Rectangle(self.input) # TODO: Remove me. This is a placeholder!
             case 4:
                 print("Detektiran kvadar!")
                 return Rectangle(self.input)
