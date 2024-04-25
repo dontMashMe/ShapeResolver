@@ -1,5 +1,6 @@
 from shapes.shape import Shape
 from shapes.rectangle import Rectangle
+from shapes.cuboid import Cuboid
 from shapes.polygon import Polygon
 
 
@@ -17,7 +18,7 @@ class ShapeFactory:
                 return Rectangle(self.input)
             case 4:
                 print("Detektiran kvadar!")
-                return Rectangle(self.input)
+                return Cuboid(self.input)
             case _:
                 print("Detektiran poligon!")
                 return Polygon(self.input)

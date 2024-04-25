@@ -10,4 +10,4 @@ class InputReader:
         with open(file_to_load, 'r') as f_read:
             for line in f_read:
                 out += line
-        return out
+        return out.rstrip("\n")  # remove any trailing newspaces
