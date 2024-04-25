@@ -26,9 +26,11 @@ class Driver:
 
     def __get_input(self, input_file: str) -> str:
         temp_input_var = InputReader(input_file).load_file()
+        """
         print("Učitane koordinate: ")
         for line in temp_input_var.split("\n"):
             print(line)
+        """
         return temp_input_var
 
     def __get_shape_type(self, input_coordinates: str) -> Shape:
